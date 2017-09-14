@@ -15,21 +15,9 @@ int Antall6erKast(int Antallkast) {			// Funksjonen får inn antallet ganger den
 	return SUM;				// Returnerer antall 6ere
 }
 int main() {
-	do {
-		cout << "Skriv inn antall ganger du vil kaste terningen: ";			// Ber brukeren skrive inn antall ganger den vil kaste terningen
-		int antall = 0;									// Initierer antallet ganger terningen skal kastes
-		cin >> antall;
-		cout << "Det ble kastet: " << Antall6erKast(antall) << " 6ere." << endl;	// Skriver ut antall 6ere som ble kastet ved å kalle på funksjonen Antall6erKast
-		cout << "Vil du kaste igjen? \n 'ja = 1\n nei = 0'" << endl;			// sjekker om man vil kast igjen
-		int svar = 0;
-		cin >> svar;
-		switch (svar) {		// Enten vil man kaste igjen eller så vil man ikke
-		case 1:
-			continue;
-		case 0:
-			break;
-		}
-		break;
-	} while (true);
-	return 0;
+	cout << "Skriv inn antall ganger du vil kaste terningen: ";			// Ber brukeren skrive inn antall ganger den vil kaste terningen
+	int antall = 0;									// Initierer antallet ganger terningen skal kastes
+	cin >> antall;
+	cout << "Det ble kastet: " << Antall6erKast(antall) << " 6ere." << endl;	// Skriver ut antall 6ere som ble kastet ved å kalle på funksjonen Antall6erKast
+return 0
 }
